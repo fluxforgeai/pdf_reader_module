@@ -5,7 +5,13 @@ from .schemas import (
     ParseResponse,
     ConfirmRequest,
     ConfirmResponse,
-    ErrorResponse
+    ErrorResponse,
+    Category,
+    CategoryUpdate,
+    TransactionEdit,
+    TransactionUpdate,
+    SuggestionRequest,
+    SuggestionResponse
 )
 
 __all__ = [
@@ -13,5 +19,11 @@ __all__ = [
     'ParseResponse',
     'ConfirmRequest',
     'ConfirmResponse',
-    'ErrorResponse'
+    'ErrorResponse',
+    'Category',
+    'CategoryUpdate',
+    'TransactionEdit',
+    'TransactionUpdate',
+    'SuggestionRequest',
+    'SuggestionResponse'
 ]

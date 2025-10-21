@@ -61,6 +61,9 @@ def bulk_insert_transactions(
     """
     Bulk insert transactions into staging_transactions table.
     Returns count of inserted records.
+
+    Supports both legacy (date, description, amount) and extended
+    (post_date, trans_date, reference, fees, balance) formats.
     """
     staging_transactions = []
 
@@ -73,7 +76,13 @@ def bulk_insert_transactions(
             amount=txn['amount'],
             currency_code=currency_code,
             status='pending_review',
-            line_number=txn.get('line_number')
+            line_number=txn.get('line_number'),
+            # Extended fields (optional)
+            post_date=txn.get('post_date'),
+            trans_date=txn.get('trans_date'),
+            reference=txn.get('reference'),
+            fees=txn.get('fees'),
+            balance=txn.get('balance')
         )
         staging_transactions.append(staging_txn)
 

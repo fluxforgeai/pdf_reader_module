@@ -1,21 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(chmod:*)",
-      "Bash(tree:*)",
-      "Bash(python3:*)",
-      "Bash(source:*)",
-      "Bash(pip install:*)",
-      "Bash(python:*)",
-      "Bash(curl:*)",
-      "Bash(brew:*)",
-      "Bash(for:*)",
-      "Bash(done)",
-      "Bash(do echo \"=== $file ===\")",
-      "Bash(while read file)",
-      "Bash(timeout 60 python:*)",
-      "Read(//Users/johanjgenis/Projects/PersFin/**)",
-      "Bash(git init:*)",
+      "Read(//Users/johanjgenis/Projects/modern_pdf_reader/BMAD-METHOD/.../**)",
+      "Read(//Users/johanjgenis/Projects/modern_pdf_reader/BMAD-METHOD/**)",
       "Bash(git add:*)"
     ],
     "deny": [],
