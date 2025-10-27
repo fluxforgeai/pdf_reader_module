@@ -38,6 +38,9 @@ ENV/
 *~
 .DS_Store
 
+# Claude Code local settings
+.claude/*.local.json
+
 # Testing
 .pytest_cache/
 .coverage
@@ -71,3 +74,7 @@ Thumbs.db
 # Project specific
 test_bank_statements.db
 test_statement.csv
+
+# BMAD Framework
+bmad/
+docs/
